@@ -1,6 +1,7 @@
 <?php
     session_start();
-?>
+    if($_SESSION['username']){
+        // echo "<script>window.location.href='../Login.php';</script>;";?>
 
 <div class="wrapper">
 
@@ -65,7 +66,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../../College_project/AddOrders.php" class="nav-link">
+                                    <a href="../../College_project/AddOrders/AddOrders.php" class="nav-link">
                                         <i class="nav-icon fa fa-th"></i>
                                         <p>
                                             Add Orders
@@ -118,7 +119,7 @@
                             <hr class="mb-2" style="background-color: black;">
                             <!-- <div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Dark Mode</span></div> -->
                             <a href="../../College_project/Settings.php"><h6 class="colors">Edit Profile</h6></a>
-                            <a href="../../College_project/Login.php" onclick='return logout()'><h6 class="colors">Sign Out</h6></a>
+                            <a href="../../College_project/index.php" onclick='return logout()'><h6 class="colors">Sign Out</h6></a>
                         </div>
                     </div>
                 </div>
@@ -138,9 +139,29 @@
 
         <div id="sidebar-overlay"></div>
     </div>
+<?php }
+else{
+    header("location:../../College_project/index.php");
+}?>
+<script>
+    function logout() {
+        var url = '../template/session_destroy.php';
+        console.log('Logout URL:', url);
 
-    <script>
-        function logout(){
-            
-        }
-    </script>
+        $.ajax({
+            type: 'GET',
+            url: '../../College_project/template/session_destroy.php',
+            success: function(response) {
+                console.log(response);
+                // Handle successful sign-out
+                console.log('Sign-out successful');
+                // You can redirect or perform other actions based on the response
+            },
+            error: function(error) {
+                // Handle errors
+                console.log('Sign-out failed');
+                // You can show an error message or perform other actions
+            }
+        });
+    }
+</script>

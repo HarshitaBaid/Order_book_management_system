@@ -621,7 +621,7 @@
                 }
                 $.ajax({
                     type: "POST",
-                    url: "neww.php",
+                    url: "./status_check.php",
                     data: { fds: details.status},
                     success: function (response) {
                         if(details.otype == "rent"){

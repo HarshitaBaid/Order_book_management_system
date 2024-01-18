@@ -8,7 +8,7 @@ $(document).ready(function () {
         // AJAX request to send pdescValue to a PHP file
         $.ajax({
             type: "POST",
-            url: "your_php_file.php", // Replace with your PHP file path
+            url: "../pdesc_file.php", // Replace with your PHP file path
             data: { pdesc: pdescValue }, // Sending pdescValue as POST data
             success: function (response) {
                 $(".table tbody .order-row").remove();
