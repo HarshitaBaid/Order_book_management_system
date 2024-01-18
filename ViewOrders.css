@@ -1,0 +1,277 @@
+table{
+    width: -webkit-fill-available;
+}
+
+.mbtn{
+    margin-left: auto;
+}
+
+.clear-btn{
+    display: flex;
+    /* width: fit-content; */
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    padding: 0px 15px;
+    border-radius: 42px;
+}
+
+.download-btn{
+    display: flex;
+    /* width: fit-content; */
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    padding: 0px 15px;
+    border-radius: 42px;
+}
+
+.name svg,
+.proname svg,
+.otype svg,
+.pdesc svg,
+.odate svg,
+.cdate svg,
+.amount svg,
+.advance svg,
+.status svg {
+    visibility: hidden;
+}
+
+.name:hover svg,
+.proname:hover svg,
+.otype:hover svg,
+.pdesc:hover svg,
+.odate:hover svg,
+.cdate:hover svg,
+.amount:hover svg,
+.advance:hover svg,
+.status:hover svg {
+    visibility: visible;
+}
+
+tbody tr.filter-row:hover {
+    background-color: #f4f6f9;
+}
+
+/* ... (your existing CSS) ... */
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    width: 11 rem;
+    height: 2rem;
+    padding: 8px;
+    box-sizing: border-box; 
+}
+
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #272525;
+    background-color: darkgray;
+    border-top: none;
+    display: none;
+}
+
+.dropdown-list li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown-list li:hover {
+    background-color: #676363;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(82 79 79 / 50%);
+    padding-top: 20px;
+}
+
+.popup1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(82 79 79 / 50%);
+    padding-top: 20px;
+}
+
+.popup2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(82 79 79 / 50%);
+    padding-top: 20px;
+}
+
+.popup3 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(82 79 79 / 50%);
+    padding-top: 20px;
+}
+
+.popup4 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(82 79 79 / 50%);
+    padding-top: 20px;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-top: 3rem;
+}
+
+.popup-amount{
+    font-weight: bold;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#amount-option{
+    margin-left: 10px;
+}
+
+.form-space{
+    margin-right: 10px;
+}
+
+.bottom-margin{
+    margin-bottom: 20px;
+}
+
+.confirm-btn{
+    float: inline-end;
+    padding: 4px 8px;
+    border-radius: 11px;
+    border: none;
+}
+
+.date-class{
+    padding: 0px 12px;
+}
+
+img{
+    height: 24px;
+    width: 24px;
+}
+
+.confirm-btn{
+    float: inline-end;
+    background-color: dodgerblue;
+    border-radius: 11px;
+    border: 2px solid black;
+}
+
+.edit{
+    cursor: pointer;
+}
+
+.p4{
+    width: 50%;
+    height: auto;
+    background-color: #dce7e1d6;
+}
+
+.editing{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.editing input[type="date"] {
+    width: 190px; /* Set the desired width */
+}
+
+.editing .status{
+    width: 190px;
+    padding: 2px;
+}
+
+.editing .proname{
+    width: 190px;
+    padding: 2px;
+}
+
+.editing span{
+    font-family: cursive;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.p4 button{
+    float: inline-end;
+    margin-right: 1rem;
+    padding: 4px 7px;
+}
+
+/* CSS */
+.p4 .button-33 {
+  background-color: #343a40;
+  border-radius: 100px;
+  box-shadow: rgba(112, 114, 113, 0.2) 0 -25px 18px -14px inset,rgba(100, 103, 101, 0.15) 0 1px 2px,rgba(109, 114, 111, 0.15) 0 2px 4px,rgba(63, 66, 64, 0.15) 0 4px 8px,rgba(116, 118, 117, 0.15) 0 8px 16px,rgba(76, 79, 77, 0.15) 0 16px 32px;
+  color: rgb(221, 236, 221);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.p4 .button-33:hover {
+  box-shadow: rgba(60, 62, 61, 0.35) 0 -25px 18px -14px inset,rgba(79, 83, 80, 0.25) 0 1px 2px,rgba(79, 83, 81, 0.25) 0 2px 4px,rgba(78, 81, 79, 0.25) 0 4px 8px,rgba(79, 83, 80, 0.25) 0 8px 16px,rgba(69, 72, 70, 0.25) 0 16px 32px;      
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.delete{
+    cursor: pointer;
+}

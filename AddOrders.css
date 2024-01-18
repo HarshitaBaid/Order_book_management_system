@@ -1,0 +1,62 @@
+.form-space{
+    /* display: flex; */
+    margin-right: 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+.pdetails{
+    /* margin-top: 32px; */
+    margin-left: 10px;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'FontAwesome';
+}
+
+hr{
+    /* margin-top: 30px; */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border: 0.5 solid black;
+    width: -webkit-fill-available;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.four{
+    margin-bottom: 20px;
+}
+
+.five{
+    margin-bottom: 20px;
+}
+
+.six{
+    margin-bottom: 20px;
+}
+
+.showing-divs{
+    display: none;
+}
+
+.ordering{
+    background-color: antiquewhite !important;
+    color: black !important;
+    border-color: black !important;
+}
+
+.adjust{
+    display: block;
+}
+
+.form-font{
+    font-weight: 300;
+    font-family: 'Diphylleia';
+}
+
+.three-container{
+    padding-left: 18px;
+}
